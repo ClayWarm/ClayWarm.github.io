@@ -59,6 +59,29 @@ export default hopeTheme({
 
   locales: {
     "/": {
+	  // navbar
+      navbar: zhNavbar,
+
+      // sidebar
+      sidebar: zhSidebar,
+
+      footer: "默认页脚",
+
+      displayFooter: true,
+
+      blog: {
+        description: "一个前端开发者",
+        intro: "/intro.html",
+      },
+
+      // page meta
+      metaLocales: {
+        editLink: "在 GitHub 上编辑此页",
+      },
+    },
+
+    /** English locale config */
+    "/en/": {
       // navbar
       navbar: enNavbar,
 
@@ -71,34 +94,11 @@ export default hopeTheme({
 
       blog: {
         description: "A FrontEnd programmer",
-        intro: "/intro.html",
+        intro: "/en/intro.html",
       },
 
       metaLocales: {
         editLink: "Edit this page on GitHub",
-      },
-    },
-
-    /** Chinese locale config */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
-      blog: {
-        description: "一个前端开发者",
-        intro: "/zh/intro.html",
-      },
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
       },
     },
   },
@@ -109,7 +109,7 @@ export default hopeTheme({
         hint: "Password: 1234",
         password: "1234",
       },
-      "/zh/demo/encrypt.html": {
+      "/en/demo/encrypt.html": {
         hint: "Password: 1234",
         password: "1234",
       },
